@@ -2,16 +2,14 @@ package com.driver.controllers;
 
 import com.driver.model.Airport;
 import com.driver.model.City;
-import java.util.Date;
 import com.driver.model.Flight;
 import com.driver.model.Passenger;
-import io.swagger.models.auth.In;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Date;
 
 @Service
 public class Servicelayer {
-
     Repositorylayer repoObj=new Repositorylayer();
 
     public String addAirport(Airport airport){
@@ -38,7 +36,7 @@ public class Servicelayer {
     public int countOfBookingsDoneByPassengerAllCombined(Integer passengerId){
         return repoObj.countOfBookingsDoneByPassengerAllCombined(passengerId);
     }
-    public int getNumberOfPeopleOn(Date date,String airportname){
+    public int getNumberOfPeopleOn(Date date, String airportname){
         return repoObj.getNumberOfPeopleOn(date,airportname);
     }
     public String cancelATicket(Integer flightId ,Integer passengerId){

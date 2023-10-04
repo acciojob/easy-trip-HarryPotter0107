@@ -5,17 +5,14 @@ import com.driver.model.City;
 import com.driver.model.Flight;
 import com.driver.model.Passenger;
 import org.springframework.stereotype.Repository;
-
 import java.util.*;
-
 
 @Repository
 public class Repositorylayer {
-    HashMap<String,Airport> airportMap=new HashMap<>();
+    HashMap<String, Airport> airportMap=new HashMap<>();
     HashMap<City,String> cityAirportidMap=new HashMap<>();
-    HashMap<Integer,Flight> flightMap=new HashMap<>();
+    HashMap<Integer, Flight> flightMap=new HashMap<>();
     HashMap<Integer, Passenger> passengerMap=new HashMap<>();
-
     HashMap<Integer,List<Integer>> PassengerFlightMap=new HashMap<>();
     HashMap<Integer, List<Integer>> FightPassengerMap=new HashMap<>();
     public String addAirport(Airport airport){
@@ -122,3 +119,15 @@ public class Repositorylayer {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
